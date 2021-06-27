@@ -5,7 +5,9 @@ from tkinter import colorchooser
 class Application(tk.Frame):
     # 色を確認するための関数
     def checkColor(self):
-        colorchooser.askcolor()
+        print(colorchooser.askcolor())
+        # Windowを削除する。
+        self.master.destroy()
 
     # 色に対して名前を指定して、label Widgetを表示する関数
     def getColorNameLabel(self):
@@ -15,7 +17,7 @@ class Application(tk.Frame):
         # height : 高さの設定
         # bg : 背景色の設定
         # 色の設定を変更する場合 : http://www.tcl.tk/man/tcl/TkCmd/colors.htm
-        # label Widgetについて : https://kuroro.blog/python/Pj4Z7JBNRvcHZvtFqiKD/
+        # Labelについて : https://kuroro.blog/python/Pj4Z7JBNRvcHZvtFqiKD/
         label = tk.Label(text="test", width=30, height=15, bg="green")
         # Windowを親要素とした場合に、label Widgetをどのように配置するのか?
         # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
@@ -30,7 +32,7 @@ class Application(tk.Frame):
         # height : 高さの設定
         # bg : 背景色の設定
         # RGBを変更する場合 : http://www.netyasun.com/home/color.html
-        # label Widgetについて : https://kuroro.blog/python/Pj4Z7JBNRvcHZvtFqiKD/
+        # Labelについて : https://kuroro.blog/python/Pj4Z7JBNRvcHZvtFqiKD/
         label = tk.Label(text="test", width=30, height=15, bg="#008000")
         # Windowを親要素とした場合に、label Widgetをどのように配置するのか?
         # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
@@ -44,7 +46,7 @@ class Application(tk.Frame):
         # height : 高さの設定
         # bg : 背景色の設定
         # 色の設定を変更する場合 : http://www.tcl.tk/man/tcl/TkCmd/colors.htm
-        # label Widgetについて : https://kuroro.blog/python/Pj4Z7JBNRvcHZvtFqiKD/
+        # Labelについて : https://kuroro.blog/python/Pj4Z7JBNRvcHZvtFqiKD/
         label = tk.Label(text="test", width=30, height=15, bg="red")
         # Windowを親要素とした場合に、label Widgetをどのように配置するのか?
         # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/

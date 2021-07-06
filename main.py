@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import colorchooser
 
-# 参考 : https://www.tcl.tk/man/tcl/TkCmd/colors.html
+# 色に関する情報 : https://www.tcl.tk/man/tcl/TkCmd/colors.html
 colorList = [
     'alice blue',
     'AliceBlue',
@@ -801,6 +801,7 @@ class Application(tk.Frame):
         # 色の設定を変更する場合 : http://www.tcl.tk/man/tcl/TkCmd/colors.htm
         # Labelについて : https://kuroro.blog/python/Pj4Z7JBNRvcHZvtFqiKD/
         label = tk.Label(text="test", width=30, height=15, bg="green")
+        # label Widgetをどのように配置するのか?
         # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
         label.pack()
 
@@ -815,6 +816,7 @@ class Application(tk.Frame):
         # RGBを変更する場合 : http://www.netyasun.com/home/color.html
         # Labelについて : https://kuroro.blog/python/Pj4Z7JBNRvcHZvtFqiKD/
         label = tk.Label(text="test", width=30, height=15, bg="#008000")
+        # label Widgetをどのように配置するのか?
         # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
         label.pack()
 
@@ -825,9 +827,9 @@ class Application(tk.Frame):
         # width : 幅の設定
         # height : 高さの設定
         # bg : 背景色の設定
-        # 色の設定を変更する場合 : http://www.tcl.tk/man/tcl/TkCmd/colors.htm
         # Labelについて : https://kuroro.blog/python/Pj4Z7JBNRvcHZvtFqiKD/
         label = tk.Label(text="test", width=30, height=15, bg="red")
+        # label Widgetをどのように配置するのか?
         # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
         label.pack()
 
